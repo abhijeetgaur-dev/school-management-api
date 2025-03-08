@@ -6,6 +6,9 @@ const app = express();
 const cors = require("cors");
 const schoolRoutes = require("./routes/schoolRoutes")
 
+app.get("/", (req, res) => {
+  res.send("Hi, I am live ");
+});
 
 app.use(cors());
 app.use(express.json())
