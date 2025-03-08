@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "src/app.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/add/(.*)",
+      "dest": "src/routes/addSchool.js"
+    },
+    {
+      "src": "/listSchool",
+      "dest": "src/routes/listsSchools.js"
+    }
+  ]
+}
