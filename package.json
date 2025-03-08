@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node run build"
+    "start": "node src/app.js"
   },
   "author": "abhijeet gaur",
   "license": "ISC",
