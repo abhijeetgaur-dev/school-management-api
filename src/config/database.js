@@ -6,10 +6,10 @@ const pass =process.env.DB_PASS;
 console.log(pass)
 
 const db = mysql.createConnection({
-  host:'localhost',
-  user:'root', 
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER, 
   password: process.env.DB_PASS,
-  database: 'school_management'
+  database: process.env.DB_NAME
 });
 
 db.connect((err) => {
